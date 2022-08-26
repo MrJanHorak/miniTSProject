@@ -1,1 +1,2 @@
-console.log("HELLOE");
+const btn = document.getElementById("btn")
+console.log(btn)
