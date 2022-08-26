@@ -7,8 +7,11 @@ function handleSubmit(e) {
     e.preventDefault();
     console.log("SUBMITTED!");
     const newTodoText = input.value;
-    const newLI = document.createElement("LI");
+    const newLI = document.createElement("li");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
     newLI.append(newTodoText);
+    newLI.append(checkbox);
     list === null || list === void 0 ? void 0 : list.append(newLI);
     input.value = "";
 }
